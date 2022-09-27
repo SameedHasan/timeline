@@ -8,7 +8,7 @@ const port = 5001;
 
 // Creating Connection
 const db = mysql.createConnection({
-  host: "localhost",
+  host: "http://192.168.10.53:86/",
   user: "phpmyadmin",
   password: "sam@1999",
   database: "timeline",
