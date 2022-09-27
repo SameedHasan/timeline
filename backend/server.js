@@ -13,7 +13,7 @@ const db = mysql.createConnection({
   password: "sam@1999",
   database: "timeline",
 });
-
+//bhsh
 // connect
 db.connect((err) => {
   if (err) {
