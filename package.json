@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server",
     "server": "nodemon backend/server",
-    "client": "npm start --prefix react-email-editor",
+    "client": "npm start --prefix frontend",
     "both": "concurrently \"npm run server\" \"npm run client\" "
   },
   "author": "Sameed Hasan",
