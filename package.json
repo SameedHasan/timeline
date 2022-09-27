@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon backend/server.js"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix react-email-editor",
+    "both": "concurrently \"npm run server\" \"npm run client\" "
   },
   "author": "Sameed Hasan",
   "license": "MIT",
