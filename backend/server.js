@@ -14,14 +14,24 @@ const db = mysql.createConnection({
   password: "sam@1999",
   database: "timeline",
 });
-//bhsh
+
+// const db = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "",
+//   database: "timeline",
+// });
+
 // connect
 db.connect((err) => {
   if (err) {
-    throw err;
+    console.log("err", err);
+  } else {
+    console.log("connected");
   }
-  console.log("MySql Connected...");
 });
+
+//bhsh
 
 app.get("/", (req, res) => {
   res.send("Hello World h!");
